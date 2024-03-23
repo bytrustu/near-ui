@@ -1,0 +1,57 @@
+{
+  "name": "near-ui",
+  "description": "Next-step Near React UI library",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./browser/specific/main.js": {
+      "import": "./browser/specific/main.js",
+      "require": "./browser/specific/main.js"
+    }
+  },
+  "keywords": [
+    "react",
+    "near-ui"
+  ],
+  "author": {
+    "name": "bytrustu",
+    "email": "bytrustu@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bytrustu/near-ui.git"
+  },
+  "scripts": {
+    "prepare": "rm -rf dist && mkdir dist && tsc"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.2.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
